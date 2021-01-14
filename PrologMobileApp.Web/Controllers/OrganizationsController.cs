@@ -13,18 +13,16 @@ namespace PrologMobileApp.Web.Controllers
     [Route("[controller]")]
     public class OrganizationsController : ControllerBase
     {
-        private readonly ILogger<OrganizationsController> _logger;
-        private readonly IOrganizationService _organizationService;
+        private readonly IOrganizationsService _organizationService;
 
-        public OrganizationsController(ILogger<OrganizationsController> logger, IOrganizationService organizationService)
+        public OrganizationsController(IOrganizationsService organizationService)
         {
-            _logger = logger;
             _organizationService = organizationService;
         }
 
         [HttpGet]
         [Route("summaries")]
-        public async Task<IEnumerable<OrganizationSummary>> Get()
+        public async Task<IEnumerable<OrganizationSummary>> GetSummaries()
         {
             return await _organizationService.GetOrganizationsSummaries();
         }

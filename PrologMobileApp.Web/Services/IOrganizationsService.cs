@@ -4,7 +4,7 @@ using PrologMobileApp.Web.Models.DataTransfer;
 
 namespace PrologMobileApp.Web.Services
 {
-    public interface IOrganizationService
+    public interface IOrganizationsService
     {
         Task<IEnumerable<OrganizationSummary>> GetOrganizationsSummaries();
     }
