@@ -33,7 +33,7 @@ namespace PrologMobileApp.Web
 
             services.AddHttpClient<IMockApiHttpClient, MockApiHttpClient>();
 
-            services.AddControllers();
+            services.AddControllers().AddNewtonsoftJson();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "PrologMobileApp.Web", Version = "v1" });
