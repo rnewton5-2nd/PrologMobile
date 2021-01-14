@@ -7,7 +7,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using Moq;
 using Moq.Protected;
-using Newtonsoft.Json;
+using System.Text.Json;
 using PrologMobileApp.Web.External;
 using PrologMobileApp.Web.Models.ExternalApi;
 using Xunit;
@@ -37,7 +37,7 @@ namespace PrologMobileApp.Tests.External
                 testOrg2,
             };
 
-            string payload = JsonConvert.SerializeObject(organizations);
+            string payload = JsonSerializer.Serialize(organizations);
             var mockHttpClient = CreateMockHttpClient(payload);
             var mockApiHttpClient = new MockApiHttpClient(mockHttpClient);
 
@@ -75,7 +75,7 @@ namespace PrologMobileApp.Tests.External
                 testUser2,
             };
 
-            string payload = JsonConvert.SerializeObject(users);
+            string payload = JsonSerializer.Serialize(users);
             var mockHttpClient = CreateMockHttpClient(payload);
             var mockApiHttpClient = new MockApiHttpClient(mockHttpClient);
 
@@ -104,7 +104,7 @@ namespace PrologMobileApp.Tests.External
                 testUser,
             };
 
-            string payload = JsonConvert.SerializeObject(users);
+            string payload = JsonSerializer.Serialize(users);
             var mockHttpClient = CreateMockHttpClient(payload);
             var mockApiHttpClient = new MockApiHttpClient(mockHttpClient);
 
@@ -157,7 +157,7 @@ namespace PrologMobileApp.Tests.External
                 testPhone2,
             };
 
-            string payload = JsonConvert.SerializeObject(phones);
+            string payload = JsonSerializer.Serialize(phones);
             var mockHttpClient = CreateMockHttpClient(payload);
             var mockApiHttpClient = new MockApiHttpClient(mockHttpClient);
 
@@ -186,7 +186,7 @@ namespace PrologMobileApp.Tests.External
                 testPhone1,
             };
 
-            string payload = JsonConvert.SerializeObject(phones);
+            string payload = JsonSerializer.Serialize(phones);
             var mockHttpClient = CreateMockHttpClient(payload);
             var mockApiHttpClient = new MockApiHttpClient(mockHttpClient);
 
