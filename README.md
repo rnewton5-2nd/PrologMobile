@@ -20,7 +20,7 @@ The project consists of one endpoint, `organizations/summaries`, which returns a
 
 hitting either `http://localhost:5000/organizations/summaries` or `https://localhost:5001/organizations/summaries` will work.
 
-Note: I was recieving an "Over Rate Limit" message from the server when I was sending many requests over rapidly. To get around this, I had to limit the number of concurrent requests to the server, and I implemented a retry loop which waits one second before trying again.
+Note: I was recieving an "Over Rate Limit" message from the server when I was sending many requests over rapidly. To get around this, I had to limit the number of concurrent requests to the server. I also implemented a retry loop which waits one second before trying again if the message is recieved.
 
 ### Tests
 To run tests, navigate to the PrologMobileApp.Tests folder and run
