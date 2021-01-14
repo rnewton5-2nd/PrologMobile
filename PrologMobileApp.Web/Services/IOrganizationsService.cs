@@ -6,6 +6,6 @@ namespace PrologMobileApp.Web.Services
 {
     public interface IOrganizationsService
     {
-        Task<IEnumerable<OrganizationSummary>> GetOrganizationsSummaries();
+        Task<IEnumerable<OrganizationSummary>> GetAllSummaries();
     }
 }

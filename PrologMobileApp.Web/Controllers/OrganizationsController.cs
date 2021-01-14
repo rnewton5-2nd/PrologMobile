@@ -24,7 +24,7 @@ namespace PrologMobileApp.Web.Controllers
         [Route("summaries")]
         public async Task<IEnumerable<OrganizationSummary>> GetSummaries()
         {
-            return await _organizationService.GetOrganizationsSummaries();
+            return await _organizationService.GetAllSummaries();
         }
     }
 }

@@ -6,7 +6,10 @@ namespace PrologMobileApp.Web.Services
 {
     public class OrganizationService : IOrganizationsService
     {
-        public async Task<IEnumerable<OrganizationSummary>> GetOrganizationsSummaries()
+
+
+
+        public async Task<IEnumerable<OrganizationSummary>> GetAllSummaries()
         {
             throw new System.NotImplementedException();
         }
