@@ -7,7 +7,7 @@ Project uses [.NET 5.0](https://dotnet.microsoft.com/download)
 ### Running
 Please ensure you have .NET 5.0 installed on your system.
 
-To run the project, navigate to the PrologMobile.Web folder and run 
+To run the project, navigate to the PrologMobileApp.Web folder and run 
 
 ```
 dotnet restore
@@ -23,7 +23,7 @@ hitting either `http://localhost:5000/organizations/summaries` or `https://local
 Note: I was recieving an "Over Rate Limit" message from the server when I was sending many requests over rapidly. To get around this, I had to limit the number of concurrent requests to the server, and I implemented a retry loop which waits one second before trying again.
 
 ### Tests
-To run tests, navigate to the PrologMobile.Tests folder and run
+To run tests, navigate to the PrologMobileApp.Tests folder and run
 
 ```
 dotnet restore
