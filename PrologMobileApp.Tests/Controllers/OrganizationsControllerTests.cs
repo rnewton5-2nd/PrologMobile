@@ -7,7 +7,7 @@ using PrologMobileApp.Web.Models.DataTransfer;
 using PrologMobileApp.Web.Services;
 using Xunit;
 
-namespace PrologMobileApp.Tests
+namespace PrologMobileApp.Tests.Controllers
 {
     public class OrganizationsControllerTests
     {
@@ -16,7 +16,7 @@ namespace PrologMobileApp.Tests
         {
             var organizationsServiceMock = new Mock<IOrganizationsService>();
             organizationsServiceMock
-                .Setup(o => o.GetOrganizationsSummaries())
+                .Setup(o => o.GetAllSummaries())
                 .ReturnsAsync(() => new List<OrganizationSummary>());
 
             var controller = new OrganizationsController(organizationsServiceMock.Object);
