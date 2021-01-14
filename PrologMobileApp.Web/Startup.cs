@@ -11,6 +11,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using PrologMobileApp.Web.External;
 using PrologMobileApp.Web.Services;
 
 namespace PrologMobileApp.Web
@@ -28,6 +29,9 @@ namespace PrologMobileApp.Web
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddScoped<IOrganizationsService, OrganizationService>();
+            services.AddScoped<IMockApiHttpClient, MockApiHttpClient>();
+
+            services.AddHttpClient<IMockApiHttpClient, MockApiHttpClient>();
 
             services.AddControllers();
             services.AddSwaggerGen(c =>
