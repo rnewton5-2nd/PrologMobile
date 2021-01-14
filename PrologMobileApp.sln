@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.26124.0
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrologMobileApp.Web", "PrologMobileApp.Web\PrologMobileApp.Web.csproj", "{AE9F9A05-C352-4A82-8917-C8FE7B3719BD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrologMobileApp.Tests", "PrologMobileApp.Tests\PrologMobileApp.Tests.csproj", "{F2CCE7AE-836A-4CFF-9DF9-151C70AF0C97}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,17 @@ Global
 		{AE9F9A05-C352-4A82-8917-C8FE7B3719BD}.Release|x64.Build.0 = Release|Any CPU
 		{AE9F9A05-C352-4A82-8917-C8FE7B3719BD}.Release|x86.ActiveCfg = Release|Any CPU
 		{AE9F9A05-C352-4A82-8917-C8FE7B3719BD}.Release|x86.Build.0 = Release|Any CPU
+		{F2CCE7AE-836A-4CFF-9DF9-151C70AF0C97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2CCE7AE-836A-4CFF-9DF9-151C70AF0C97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2CCE7AE-836A-4CFF-9DF9-151C70AF0C97}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{F2CCE7AE-836A-4CFF-9DF9-151C70AF0C97}.Debug|x64.Build.0 = Debug|Any CPU
+		{F2CCE7AE-836A-4CFF-9DF9-151C70AF0C97}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F2CCE7AE-836A-4CFF-9DF9-151C70AF0C97}.Debug|x86.Build.0 = Debug|Any CPU
+		{F2CCE7AE-836A-4CFF-9DF9-151C70AF0C97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2CCE7AE-836A-4CFF-9DF9-151C70AF0C97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2CCE7AE-836A-4CFF-9DF9-151C70AF0C97}.Release|x64.ActiveCfg = Release|Any CPU
+		{F2CCE7AE-836A-4CFF-9DF9-151C70AF0C97}.Release|x64.Build.0 = Release|Any CPU
+		{F2CCE7AE-836A-4CFF-9DF9-151C70AF0C97}.Release|x86.ActiveCfg = Release|Any CPU
+		{F2CCE7AE-836A-4CFF-9DF9-151C70AF0C97}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
