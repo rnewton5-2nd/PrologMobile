@@ -6,6 +6,7 @@ namespace PrologMobileApp.Web.Models.DataTransfer
     {
         public string id;
         public string name;
+        public string email;
         public int phoneCount;
     }
 }
