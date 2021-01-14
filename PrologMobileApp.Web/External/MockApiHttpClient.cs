@@ -3,7 +3,7 @@ using System.Linq;
 using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
-using Newtonsoft.Json;
+using System.Text.Json;
 using PrologMobileApp.Web.Models.ExternalApi;
 
 namespace PrologMobileApp.Web.External
@@ -26,19 +26,19 @@ namespace PrologMobileApp.Web.External
         public async Task<IEnumerable<Organization>> GetOrganizations()
         {
             string response = await SendRequest(ORGANIZATIONS_URL);
-            return JsonConvert.DeserializeObject<IEnumerable<Organization>>(response);
+            return JsonSerializer.Deserialize<IEnumerable<Organization>>(response);
         }
 
         public async Task<IEnumerable<User>> GetUsers(string organizationId)
         {
             string response = await SendRequest(string.Format(USERS_URL_TEMPLATE, organizationId));
-            return JsonConvert.DeserializeObject<IEnumerable<User>>(response);
+            return JsonSerializer.Deserialize<IEnumerable<User>>(response);
         }
 
         public async Task<IEnumerable<Phone>> GetPhones(string organizationId, string userId)
         {
             string response = await SendRequest(string.Format(PHONES_URL_TEMPLATE, organizationId, userId));
-            return JsonConvert.DeserializeObject<IEnumerable<Phone>>(response);
+            return JsonSerializer.Deserialize<IEnumerable<Phone>>(response);
         }
 
         public async Task<IEnumerable<User>> GetUsers(IEnumerable<Organization> organizations)

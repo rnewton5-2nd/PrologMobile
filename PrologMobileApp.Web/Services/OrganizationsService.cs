@@ -1,7 +1,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Newtonsoft.Json;
 using PrologMobileApp.Web.External;
 using PrologMobileApp.Web.Models.DataTransfer;
 using PrologMobileApp.Web.Models.ExternalApi;

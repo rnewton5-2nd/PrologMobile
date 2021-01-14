@@ -4,10 +4,10 @@ namespace PrologMobileApp.Web.Models.ExternalApi
 {
     public class User
     {
-        public string id;
-        public string organizationId;
-        public DateTime createdAt;
-        public string name;
-        public string email;
+        public string id { get; set; }
+        public string organizationId { get; set; }
+        public DateTime createdAt { get; set; }
+        public string name { get; set; }
+        public string email { get; set; }
     }
 }

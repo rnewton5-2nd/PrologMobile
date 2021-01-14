@@ -4,9 +4,9 @@ namespace PrologMobileApp.Web.Models.DataTransfer
 {
     public class OrganizationSummaryUser
     {
-        public string id;
-        public string name;
-        public string email;
-        public int phoneCount;
+        public string id { get; set; }
+        public string name { get; set; }
+        public string email { get; set; }
+        public int phoneCount { get; set; }
     }
 }

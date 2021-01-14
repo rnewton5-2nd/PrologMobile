@@ -5,11 +5,11 @@ namespace PrologMobileApp.Web.Models.DataTransfer
 {
     public class OrganizationSummary
     {
-        public string id;
-        public string name;
-        public string blacklistTotal;
-        public string totalCount;
-        public DateTime createdAt;
-        public List<OrganizationSummaryUser> users;
+        public string id { get; set; }
+        public string name { get; set; }
+        public string blacklistTotal { get; set; }
+        public string totalCount { get; set; }
+        public DateTime createdAt { get; set; }
+        public List<OrganizationSummaryUser> users { get; set; }
     }
 }
