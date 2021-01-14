@@ -27,7 +27,7 @@ To run tests, navigate to the PrologMobile.Tests folder and run
 
 ```
 dotnet restore
-dotnet run
+dotnet test
 ```
 
 ---
